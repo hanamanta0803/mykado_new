@@ -1,0 +1,107 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2, h3, h4, p, a, label, ul, li, div, input {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  /* display: none; */
+}
+
+/* header */
+header {
+  width: 100%;
+}
+
+header li, footer li {
+  display: inline;
+}
+
+/* select */
+#select>div {
+  display: flex;
+  width: 100%;
+}
+
+/* #select > div input[type=checkbox]:checked{
+  display: none;
+} */
+/* item */
+#item>div {
+  display: flex;
+  width: 50%;
+  background-color: red;
+}
+
+/* season_list */
+/* type_list */
+.season_list, .type_list {
+  background-color: skyblue;
+}
+
+.season_list>div, .type_list>div {
+  width: 20%;
+}
+
+/* list */
+#list {
+  width: 100%;
+}
+
+#list ul {
+  width: 100%;
+  background-color: yellow;
+}
+
+#list li {
+  width: 19%;
+  display: inline-block;
+  background-color: pink;
+}
+
+#list li label {
+}
+
+#list li input {
+  /* display: none; */
+}
+
+.list_icon_01 {
+  height: 1rem;
+  display: block;
+  vertical-align: bottom;
+  margin: auto;
+}
+
+.icon_checked{
+  color: red;
+}
+
+.season_none {
+  color: blue;
+}
+
+.type_none {
+  font-style: italic;
+  font-weight: bold;
+}
