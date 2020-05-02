@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script type="text/javascript" src="js/checked.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script> //ファイル読み込み
+    $(function() {
+      $("#header").load("include/header.html");
+      $("#select").load("include/select.html");
+      $("#list").load("include/list.html");ı
+      $("#footer").load("include/footer.html");
+    });
+  </script>
+  <script>
+    // checkboxのチェック判定が変更された時にform内のcheckboxのcheckedされているclass(id)を
+    // 取得するスクリプトを組む
+  </script>
+  <title>mykado | 花材の検索サービス</title>
+</head>
+
+<body>
+  <header id="header"></header>
+  <main id="main">
+    <div id="select"></div>
+    <div id="list"></div>
+  </main>
+  <footer id="footer"></footer>
+</body>
+
+</html>
