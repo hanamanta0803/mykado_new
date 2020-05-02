@@ -1,0 +1,184 @@
+<div id="season_list" class="season_list">
+  <div class="spring">
+    <input type="checkbox" id="spring_list">
+    <label for="spring_list">春</label>
+  </div>
+  <div class="summer">
+    <input type="checkbox" id="summer_list">
+    <label for="summer_list">夏</label>
+  </div>
+  <div class="autumn">
+    <input type="checkbox" id="autumn_list">
+    <label for="autumn_list">秋</label>
+  </div>
+  <div class="winter">
+    <input type="checkbox" id="winter_list">
+    <label for="winter_list">冬</label>
+  </div>
+  <div class="around">
+    <input type="checkbox" id="around_list">
+    <label for="around_list">通年</label>
+  </div>
+</div>
+
+<div id="type_list" class="type_list">
+  <div class="tree">
+    <input type="checkbox" id="tree_list">
+    <label for="tree_list">枝</label>
+  </div>
+  <div class="flower">
+    <input type="checkbox" id="flower_list">
+    <label for="flower_list">花</label>
+  </div>
+  <div class="leaf">
+    <input type="checkbox" id="leaf_list">
+    <label for="leaf_list">葉</label>
+  </div>
+  <div class="fruit">
+    <input type="checkbox" id="fruit_list">
+    <label for="fruit_list">実</label>
+  </div>
+  <div class="other">
+    <input type="checkbox" id="other_list">
+    <label for="other_list">その他</label>
+  </div>
+</div>
+
+<!-- 季節を選択すると list内の選択された季節のリストが表示される -->
+
+<script type="text/javascript">
+  $(function() {
+    // input checkbox「春」を指定する
+    var spring_list = document.getElementById("spring_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var spring = list.getElementsByClassName("spring");
+    // checkbox「春」 が checked されると指定した id をもつ要素に class が付与される
+    $(spring_list).change(function() {
+      $(spring).toggleClass('season_none');
+    });
+  });
+
+  $(function() {
+    // input checkbox「夏」を指定する
+    var summer_list = document.getElementById("summer_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var summer = list.getElementsByClassName("summer");
+    // checkbox「夏」 が checked されると指定した id をもつ要素に class が付与される
+    $(summer_list).change(function() {
+      $(summer).toggleClass('season_none');
+    });
+  });
+
+  $(function() {
+    // input checkbox「秋」を指定する
+    var autumn_list = document.getElementById("autumn_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var autumn = list.getElementsByClassName("autumn");
+    // checkbox「秋」 が checked されると指定した id をもつ要素に class が付与される
+    $(autumn_list).change(function() {
+      $(autumn).toggleClass('season_none');
+    });
+  });
+
+  $(function() {
+    // input checkbox「冬」を指定する
+    var winter_list = document.getElementById("winter_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var winter = list.getElementsByClassName("winter");
+    // checkbox「冬」 が checked されると指定した id をもつ要素に class が付与される
+    $(winter_list).change(function() {
+      $(winter).toggleClass('season_none');
+    });
+  });
+
+  $(function() {
+    // input checkbox「通年」を指定する
+    var around_list = document.getElementById("around_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var around = list.getElementsByClassName("around");
+    // checkbox「通年」 が checked されると指定した id をもつ要素に class が付与される
+    $(around_list).change(function() {
+      $(around).toggleClass('season_none');
+    });
+  });
+</script>
+
+
+<!-- 種類を選択すると list内の選択された種類のリストが表示される -->
+
+<script type="text/javascript">
+  $(function() {
+    // input checkbox「枝」を指定する
+    var tree_list = document.getElementById("tree_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var tree = list.getElementsByClassName("tree");
+    // checkbox「枝」 が checked されると指定した id をもつ要素に class が付与される
+    $(tree_list).change(function() {
+      $(tree).toggleClass('type_none');
+    });
+  });
+
+  $(function() {
+    // input checkbox「花」を指定する
+    var flower_list = document.getElementById("flower_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var flower = list.getElementsByClassName("flower");
+    // checkbox「花」 が checked されると指定した id をもつ要素に class が付与される
+    $(flower_list).change(function() {
+      $(flower).toggleClass('type_none');
+    });
+  });
+
+  $(function() {
+    // input checkbox「葉」を指定する
+    var leaf_list = document.getElementById("leaf_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var leaf = list.getElementsByClassName("leaf");
+    // checkbox「葉」 が checked されると指定した id をもつ要素に class が付与される
+    $(leaf_list).change(function() {
+      $(leaf).toggleClass('type_none');
+    });
+  });
+
+  $(function() {
+    // input checkbox「実」を指定する
+    var fruit_list = document.getElementById("fruit_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var fruit = list.getElementsByClassName("fruit");
+    // checkbox「実」 が checked されると指定した id をもつ要素に class が付与される
+    $(fruit_list).change(function() {
+      $(fruit).toggleClass('type_none');
+    });
+  });
+
+  $(function() {
+    // input checkbox「その他」を指定する
+    var other_list = document.getElementById("other_list");
+    // div id="list"を指定する
+    var list = document.getElementById("list");
+    // list>.test を指定する
+    var other = list.getElementsByClassName("other");
+    // checkbox「その他」 が checked されると指定した id をもつ要素に class が付与される
+    $(other_list).change(function() {
+      $(other).toggleClass('type_none');
+    });
+  });
+</script>

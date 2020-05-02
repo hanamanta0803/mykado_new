@@ -1,0 +1,273 @@
+<!-- ハートをクリックしたらimgにクラスが付与される（cssで色を赤くする） -->
+<script type="text/javascript">
+  $(function() {
+    // input checkbox「春」を指定する
+    var li_01 = document.getElementById("li_01");
+    //
+    var f_sum_001 = document.getElementById("f_sum_001");
+    // div id="list"を指定する
+    var test = f_sum_001.getElementsByClassName("test");
+    // list>.test を指定する
+    $(li_01).change(function() {
+      $(test).toggleClass("icon_checked");
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(function() {
+    // input checkbox「春」を指定する
+    var li_01 = document.getElementById("li_01");
+    //
+    var f_spr_001 = document.getElementById("f_spi_001");
+    // div id="list"を指定する
+    var test = f_spr_001.getElementsByClassName("test");
+    // list>.test を指定する
+    $(li_01).change(function() {
+      $(test).toggleClass("icon_checked");
+    });
+  });
+</script>
+
+
+<form class="" action="../favorite/index.php" method="post">
+
+  <ul>
+    <li class="flower summer">
+      <input id="li_01" type="checkbox" name="敦盛草">敦盛草
+      <label id="f_sum_001" for="li_01">
+        <i class="fas fa-heart test">&nbsp</i>
+      </label>
+    </li>
+
+    <li class="flower spring">
+      <input id="li_01" type="checkbox" name="あやめ" >あやめ
+      <label id="f_spr_001" for="li_01">
+        <i class="fas fa-heart test">&nbsp</i>
+      </label>
+    </li>
+
+    <li class=""><input type="checkbox" name="">エビネ</li>
+    <li class=""><input type="checkbox" name="">エリカ</li>
+    <li class=""><input type="checkbox" name="">猿候草</li>
+    <li class=""><input type="checkbox" name="">翁草</li>
+    <li class=""><input type="checkbox" name="">おだまき</li>
+    <li class=""><input type="checkbox" name="">カタクリ</li>
+    <li class=""><input type="checkbox" name="">かんぞう</li>
+    <li class=""><input type="checkbox" name="">黒百合</li>
+    <li class=""><input type="checkbox" name="">下野草</li>
+    <li class=""><input type="checkbox" name="">春蘭</li>
+    <li class=""><input type="checkbox" name="">菖蒲</li>
+    <li class=""><input type="checkbox" name="">紫蘭</li>
+    <li class=""><input type="checkbox" name="">すみれ</li>
+    <li class=""><input type="checkbox" name="">菜の花</li>
+    <li class=""><input type="checkbox" name="">貝母百合</li>
+    <li class=""><input type="checkbox" name="">矢車菊</li>
+    <li class=""><input type="checkbox" name="">朝顔</li>
+    <li class=""><input type="checkbox" name="">あざみ</li>
+    <li class=""><input type="checkbox" name="">杜若</li>
+    <li class=""><input type="checkbox" name="">カンナ</li>
+    <li class=""><input type="checkbox" name="">桔梗</li>
+    <li class=""><input type="checkbox" name="">九蓋草</li>
+    <li class=""><input type="checkbox" name="">河骨</li>
+    <li class=""><input type="checkbox" name="">沢桔梗</li>
+    <li class=""><input type="checkbox" name="">紫苑</li>
+    <li class=""><input type="checkbox" name="">睡蓮</li>
+    <li class=""><input type="checkbox" name="">千日紅</li>
+    <li class=""><input type="checkbox" name="">せんのう</li>
+    <li class=""><input type="checkbox" name="">立葵</li>
+    <li class=""><input type="checkbox" name="">鉄線</li>
+    <li class=""><input type="checkbox" name="">虎の尾</li>
+    <li class=""><input type="checkbox" name="">撫子</li>
+    <li class=""><input type="checkbox" name="">河原撫子</li>
+    <li class=""><input type="checkbox" name="">日々草</li>
+    <li class=""><input type="checkbox" name="">檜扇</li>
+    <li class=""><input type="checkbox" name="">ひまわり</li>
+    <li class=""><input type="checkbox" name="">紅花</li>
+    <li class=""><input type="checkbox" name="">夕霧草</li>
+    <li class=""><input type="checkbox" name="">百合</li>
+    <li class=""><input type="checkbox" name="">鉄砲百合</li>
+    <li class=""><input type="checkbox" name="">笹百合</li>
+    <li class=""><input type="checkbox" name="">山百合</li>
+    <li class=""><input type="checkbox" name="">ヒメサユリ</li>
+    <li class=""><input type="checkbox" name="">鬼百合</li>
+    <li class=""><input type="checkbox" name="">スカシユリ</li>
+    <li class=""><input type="checkbox" name="">姫百合</li>
+    <li class=""><input type="checkbox" name="">るりたまあざみ</li>
+    <li class=""><input type="checkbox" name="">男郎花</li>
+    <li class=""><input type="checkbox" name="">女郎花</li>
+    <li class=""><input type="checkbox" name="">輪菊</li>
+    <li class=""><input type="checkbox" name="">小菊</li>
+    <li class=""><input type="checkbox" name="">寒菊</li>
+    <li class=""><input type="checkbox" name="">路地菊</li>
+    <li class=""><input type="checkbox" name="">嵯峨菊</li>
+    <li class=""><input type="checkbox" name="">糸菊</li>
+    <li class=""><input type="checkbox" name="">磯菊</li>
+    <li class=""><input type="checkbox" name="">鶏頭</li>
+    <li class=""><input type="checkbox" name="">石蕗</li>
+    <li class=""><input type="checkbox" name="">とりかぶと</li>
+    <li class=""><input type="checkbox" name="">野紺菊</li>
+    <li class=""><input type="checkbox" name="">彼岸花</li>
+    <li class=""><input type="checkbox" name="">藤袴</li>
+    <li class=""><input type="checkbox" name="">ほととぎす</li>
+    <li class=""><input type="checkbox" name="">水引</li>
+    <li class=""><input type="checkbox" name="">竜胆</li>
+    <li class=""><input type="checkbox" name="">吾亦紅</li>
+    <li class=""><input type="checkbox" name="">キンセンカ</li>
+    <li class=""><input type="checkbox" name="">水仙</li>
+    <li class=""><input type="checkbox" name="">福寿草</li>
+    <li class=""><input type="checkbox" name="">かすみ草</li>
+    <li class=""><input type="checkbox" name="">イボタ</li>
+    <li class=""><input type="checkbox" name="">黄梅</li>
+    <li class=""><input type="checkbox" name="">オオデマリ</li>
+    <li class=""><input type="checkbox" name="">大山蓮華</li>
+    <li class=""><input type="checkbox" name="">海棠</li>
+    <li class=""><input type="checkbox" name="">ガクアジサイ</li>
+    <li class=""><input type="checkbox" name="">キイチゴ</li>
+    <li class=""><input type="checkbox" name="">黄葉でまり</li>
+    <li class=""><input type="checkbox" name="">キブシ</li>
+    <li class=""><input type="checkbox" name="">ギョリュウ</li>
+    <li class=""><input type="checkbox" name="">金宝樹</li>
+    <li class=""><input type="checkbox" name="">黒文字</li>
+    <li class=""><input type="checkbox" name="">小手毬</li>
+    <li class=""><input type="checkbox" name="">辛夷</li>
+    <li class=""><input type="checkbox" name="">彼岸桜</li>
+    <li class=""><input type="checkbox" name="">東海桜</li>
+    <li class=""><input type="checkbox" name="">啓翁桜</li>
+    <li class=""><input type="checkbox" name="">吉野桜</li>
+    <li class=""><input type="checkbox" name="">山桜</li>
+    <li class=""><input type="checkbox" name="">おかめ桜</li>
+    <li class=""><input type="checkbox" name="">枝垂桜</li>
+    <li class=""><input type="checkbox" name="">うこん桜</li>
+    <li class=""><input type="checkbox" name="">緋寒桜</li>
+    <li class=""><input type="checkbox" name="">山茱萸</li>
+    <li class=""><input type="checkbox" name="">サンタンカ</li>
+    <li class=""><input type="checkbox" name="">石楠花</li>
+    <li class=""><input type="checkbox" name="">車輪梅</li>
+    <li class=""><input type="checkbox" name="">蘇芳</li>
+    <li class=""><input type="checkbox" name="">ツクバネウツギ</li>
+    <li class=""><input type="checkbox" name="">霧島つつじ</li>
+    <li class=""><input type="checkbox" name="">久留米つつじ</li>
+    <li class=""><input type="checkbox" name="">田無つつじ</li>
+    <li class=""><input type="checkbox" name="">琉球つつじ</li>
+    <li class=""><input type="checkbox" name="">忍冬</li>
+    <li class=""><input type="checkbox" name="">梅花空木</li>
+    <li class=""><input type="checkbox" name="">花水木</li>
+    <li class=""><input type="checkbox" name="">藤</li>
+    <li class=""><input type="checkbox" name="">牡丹</li>
+    <li class=""><input type="checkbox" name="">マンサク</li>
+    <li class=""><input type="checkbox" name="">ミツマタ</li>
+    <li class=""><input type="checkbox" name="">むしかり</li>
+    <li class=""><input type="checkbox" name="">木蓮</li>
+    <li class=""><input type="checkbox" name="">桃</li>
+    <li class=""><input type="checkbox" name="">山梨</li>
+    <li class=""><input type="checkbox" name="">山吹</li>
+    <li class=""><input type="checkbox" name="">雪柳</li>
+    <li class=""><input type="checkbox" name="">ライラック</li>
+    <li class=""><input type="checkbox" name="">林生梅</li>
+    <li class=""><input type="checkbox" name="">連翹</li>
+    <li class=""><input type="checkbox" name="">夾竹桃</li>
+    <li class=""><input type="checkbox" name="">金糸梅</li>
+    <li class=""><input type="checkbox" name="">下野</li>
+    <li class=""><input type="checkbox" name="">素馨</li>
+    <li class=""><input type="checkbox" name="">泰山木</li>
+    <li class=""><input type="checkbox" name="">ちんしばい</li>
+    <li class=""><input type="checkbox" name="">ドウダンツツジ</li>
+    <li class=""><input type="checkbox" name="">夏椿</li>
+    <li class=""><input type="checkbox" name="">夏ハゼ</li>
+    <li class=""><input type="checkbox" name="">未央柳</li>
+    <li class=""><input type="checkbox" name="">槿</li>
+    <li class=""><input type="checkbox" name="">山芍薬</li>
+    <li class=""><input type="checkbox" name="">山法師</li>
+    <li class=""><input type="checkbox" name="">リョウブ</li>
+    <li class=""><input type="checkbox" name="">エニシダ</li>
+    <li class=""><input type="checkbox" name="">黄金水木</li>
+    <li class=""><input type="checkbox" name="">キササゲ</li>
+    <li class=""><input type="checkbox" name="">サンゴ水木</li>
+    <li class=""><input type="checkbox" name="">茶</li>
+    <li class=""><input type="checkbox" name="">ツルウメモドキ</li>
+    <li class=""><input type="checkbox" name="">ナナカマド</li>
+    <li class=""><input type="checkbox" name="">ニシキギ</li>
+    <li class=""><input type="checkbox" name="">ネズミモチ</li>
+    <li class=""><input type="checkbox" name="">紅したん</li>
+    <li class=""><input type="checkbox" name="">まゆみ</li>
+    <li class=""><input type="checkbox" name="">紅葉</li>
+    <li class=""><input type="checkbox" name="">青文字</li>
+    <li class=""><input type="checkbox" name="">梅</li>
+    <li class=""><input type="checkbox" name="">うめもどき</li>
+    <li class=""><input type="checkbox" name="">カクレミノ</li>
+    <li class=""><input type="checkbox" name="">椿</li>
+    <li class=""><input type="checkbox" name="">土佐水木</li>
+    <li class=""><input type="checkbox" name="">杜松</li>
+    <li class=""><input type="checkbox" name="">木瓜</li>
+    <li class=""><input type="checkbox" name="">行李柳</li>
+    <li class=""><input type="checkbox" name="">赤芽柳</li>
+    <li class=""><input type="checkbox" name="">枝垂柳</li>
+    <li class=""><input type="checkbox" name="">柊南天</li>
+    <li class=""><input type="checkbox" name="">小豆柳</li>
+    <li class=""><input type="checkbox" name="">黒芽柳</li>
+    <li class=""><input type="checkbox" name="">石化柳</li>
+    <li class=""><input type="checkbox" name="">ヤブコウジ</li>
+    <li class=""><input type="checkbox" name="">蝋梅</li>
+    <li class=""><input type="checkbox" name="">若松</li>
+    <li class=""><input type="checkbox" name="">根引松</li>
+    <li class=""><input type="checkbox" name="">三光松</li>
+    <li class=""><input type="checkbox" name="">女松</li>
+    <li class=""><input type="checkbox" name="">老松</li>
+    <li class=""><input type="checkbox" name="">寿松</li>
+    <li class=""><input type="checkbox" name="">蛇の目松</li>
+    <li class=""><input type="checkbox" name="">五葉松</li>
+    <li class=""><input type="checkbox" name="">弟切草</li>
+    <li class=""><input type="checkbox" name="">アケビ</li>
+    <li class=""><input type="checkbox" name="">アワ</li>
+    <li class=""><input type="checkbox" name="">石榴</li>
+    <li class=""><input type="checkbox" name="">突羽根</li>
+    <li class=""><input type="checkbox" name="">むべ</li>
+    <li class=""><input type="checkbox" name="">飯桐</li>
+    <li class=""><input type="checkbox" name="">万年青</li>
+    <li class=""><input type="checkbox" name="">ガマズミ</li>
+    <li class=""><input type="checkbox" name="">栗</li>
+    <li class=""><input type="checkbox" name="">山帰来</li>
+    <li class=""><input type="checkbox" name="">千両</li>
+    <li class=""><input type="checkbox" name="">南天</li>
+    <li class=""><input type="checkbox" name="">紫式部</li>
+    <li class=""><input type="checkbox" name="">アマドコロ</li>
+    <li class=""><input type="checkbox" name="">著莪</li>
+    <li class=""><input type="checkbox" name="">石菖</li>
+    <li class=""><input type="checkbox" name="">鳴子百合</li>
+    <li class=""><input type="checkbox" name="">芭蕉</li>
+    <li class=""><input type="checkbox" name="">麦</li>
+    <li class=""><input type="checkbox" name="">いちはつ</li>
+    <li class=""><input type="checkbox" name="">おもだか</li>
+    <li class=""><input type="checkbox" name="">蓼</li>
+    <li class=""><input type="checkbox" name="">谷渡り</li>
+    <li class=""><input type="checkbox" name="">半夏生</li>
+    <li class=""><input type="checkbox" name="">フトイ</li>
+    <li class=""><input type="checkbox" name="">縞フトイ</li>
+    <li class=""><input type="checkbox" name="">葦</li>
+    <li class=""><input type="checkbox" name="">縞葦</li>
+    <li class=""><input type="checkbox" name="">稲</li>
+    <li class=""><input type="checkbox" name="">えのころそう</li>
+    <li class=""><input type="checkbox" name="">刈萱</li>
+    <li class=""><input type="checkbox" name="">かんすげ</li>
+    <li class=""><input type="checkbox" name="">笹</li>
+    <li class=""><input type="checkbox" name="">糸ススキ</li>
+    <li class=""><input type="checkbox" name="">青ススキ</li>
+    <li class=""><input type="checkbox" name="">縞ススキ</li>
+    <li class=""><input type="checkbox" name="">矢筈ススキ</li>
+    <li class=""><input type="checkbox" name="">竹</li>
+    <li class=""><input type="checkbox" name="">ダンチク</li>
+    <li class=""><input type="checkbox" name="">トクサ</li>
+    <li class=""><input type="checkbox" name="">萩</li>
+    <li class=""><input type="checkbox" name="">ヤブレガサ</li>
+    <li class=""><input type="checkbox" name="">ウラジロ羊歯</li>
+    <li class=""><input type="checkbox" name="">玉羊歯</li>
+    <li class=""><input type="checkbox" name="">山羊歯</li>
+    <li class=""><input type="checkbox" name="">葉蘭</li>
+    <li class=""><input type="checkbox" name="">縞葉蘭</li>
+    <li class=""><input type="checkbox" name="">旭葉蘭</li>
+    <li class=""><input type="checkbox" name="">ひとつば</li>
+    <li class=""><input type="checkbox" name="">ヤツデ</li>
+  </ul>
+
+</form>
